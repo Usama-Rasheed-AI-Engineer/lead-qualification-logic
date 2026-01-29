@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Mike",
+        "usage_year": 2016,
+        "injury": "Tinnitus",
+        "has_lawyer": false
+    },
+    {
+        "name": "Sarah",
+        "usage_year": 2012,
+        "injury": "Broken Leg",
+        "has_lawyer": false
+    },
+    {
+        "name": "John",
+        "usage_year": 2017,
+        "injury": "Tinnitus",
+        "has_lawyer": true
+    }
+]

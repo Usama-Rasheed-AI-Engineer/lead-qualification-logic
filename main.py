@@ -1,5 +1,12 @@
-# Safe data extraction
-lead = {'id': 2} 
-# Using the empty dict trick to prevent crashing
-email = lead.get('contact_info', {}).get('email', 'No Email')
-print(f"Lead Email: {email}")
+lead = {
+    'name': 'Mike',
+    'usage_year': 2016,
+    'injury': 'Tinnitus',
+    'has_lawyer': False
+}
+
+# The Safe Logic (AND + NOT)
+if (2015 <= lead['usage_year'] <= 2018) and lead['injury'] == 'Tinnitus' and not lead['has_lawyer']:
+    print("Qualified")
+else:
+    print("Rejected")
